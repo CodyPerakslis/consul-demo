@@ -2,6 +2,10 @@
   "service": {
     "name": "web",
     "port": 8080,
+    "check": {
+      "args": ["ping", "-c1", "google.com"],
+      "interval": "10s"
+    },
     "connect": {
       "proxy": {
         "config": {

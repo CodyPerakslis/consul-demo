@@ -1,6 +1,14 @@
 from math import sqrt
 
 def factorize(n):
+    """
+    Return the prime factors of a numberself.
+
+    Example: 12 -> [(2,2), (3,1)]
+
+    :param n: The integer to be factorized
+    :returns: A list of tuples (a,b) where a is a prime factor of n that appears b times in n
+    """
     factors = []
     if n%2 == 0:
         count = 0
@@ -22,6 +30,7 @@ def factorize(n):
     factors.append((n,1))
     return factors
 
+# Infinite loop, else the connection would close
 while True:
     x = input()
     try:
