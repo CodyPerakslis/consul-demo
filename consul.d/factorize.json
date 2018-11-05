@@ -1,0 +1,7 @@
+{
+  "service": {
+    "name": "factorize",
+    "port": 8182,
+    "connect": {"proxy": {}}
+  }
+}

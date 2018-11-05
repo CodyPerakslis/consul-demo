@@ -1,0 +1,16 @@
+{
+  "service": {
+    "name": "web",
+    "port": 8080,
+    "connect": {
+      "proxy": {
+        "config": {
+          "upstreams": [{
+            "destination_name": "factorize",
+            "local_bind_port": 9192
+          }]
+        }
+      }
+    }
+  }
+}
